@@ -2,6 +2,8 @@
 
 [![PowerShell Gallery](https://img.shields.io/powershellgallery/v/docfx-toc-generator)](https://www.powershellgallery.com/packages/docfx-toc-generator/)
 
+This fork adds support for ToC item name generation based on a `name` attribute or just the filename (sanitized and turned into a "title" automatically) if nothing is manually passed. It also adds the ability to create a blank `index.md` file (e.g. `touch index.md`) in any directory to have it added to the ToC without having to add any content. This is useful for just making ToC folders.
+
 ## What is this?
 
 This script is used to generate `toc.yml` file for every folder in documentation project.
@@ -21,7 +23,7 @@ Install-Module powershell-yaml
 ⚠ MAKE SURE YOU HAVE [**POWERSHELL CORE**](https://github.com/PowerShell/PowerShell) INSTALLED.
 
 ```powershell
-Install-Module -Name docfx-toc-generator    
+Install-Module -Name docfx-toc-generator
 ```
 
 ## FAQ
